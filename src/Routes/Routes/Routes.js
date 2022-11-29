@@ -3,6 +3,7 @@ import Main from "../../Layout/Main";
 import Blogs from "../../Pages/Blogs/Blogs";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
+import AllPhones from "../../Pages/PhoneCategories/AllPhones/AllPhones";
 import Register from "../../Pages/Register/Register";
 import ErrorPage from "../../Pages/Shared/ErrorPage/ErrorPage";
 
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>
+            },
+            {
+                path: '/allPhones/:id',
+                element: <AllPhones></AllPhones>
             },
             {
                 path: '/login',
