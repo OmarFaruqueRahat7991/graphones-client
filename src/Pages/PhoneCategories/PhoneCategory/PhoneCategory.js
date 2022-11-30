@@ -1,6 +1,7 @@
 import React from 'react';
 
-const PhoneCategory = () => {
+const PhoneCategory = ({category}) => {
+    
     return (
         <div>
             

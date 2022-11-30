@@ -27,8 +27,7 @@ const PhoneCategories = () => {
                 )
             }
         </div>
-
-      </section>
+        </section>
     );
 };
 
