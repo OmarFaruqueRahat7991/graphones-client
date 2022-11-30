@@ -5,7 +5,7 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Register = () => {
-  const { createUser } = useContext(AuthContext);
+  const { createUser , updateUser } = useContext(AuthContext);
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -22,6 +22,14 @@ const Register = () => {
       .then((result) => {
         const user = result.user;
         toast('User Created Successfully.')
+        const userInfo = {
+          displayName: name
+      }
+      updateUser(userInfo)
+          .then(() => { 
+
+          })
+          .catch(err => console.log(err));
         console.log(user);
         navigate(from, { replace: true });
       })
