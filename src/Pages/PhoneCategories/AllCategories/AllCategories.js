@@ -16,7 +16,7 @@ const AllCategories = ({category}) => {
                     <Link to={`/allPhones/${_id}`}><button className="btn btn-outline btn-primary rounded-xl">See All</button></Link>
                 </div>
             </div>
-        </div>
+            </div>
     );
 };
 
