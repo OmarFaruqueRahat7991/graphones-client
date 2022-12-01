@@ -31,6 +31,7 @@ const PhoneCategory = ({category}) => {
                 </div>
                 <div className="card-actions justify-end">
                     <Link><button className="btn btn-outline btn-primary rounded-xl">Book Now</button></Link>
+                    <label htmlFor="booking-modal" className="btn">open modal</label>
                 </div>
             </div>
             <div className='hidden'>

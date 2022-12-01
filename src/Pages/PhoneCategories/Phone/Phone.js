@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import BookingModal from '../BookingModal/BookingModal';
 import PhoneCategory from '../PhoneCategory/PhoneCategory';
 
 const Phone = ({phones}) => {
@@ -19,6 +20,7 @@ const Phone = ({phones}) => {
                 )
             }
         </div>
+        <BookingModal></BookingModal> 
 
       </section>
     );
