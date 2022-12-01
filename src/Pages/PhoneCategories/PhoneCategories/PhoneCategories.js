@@ -14,7 +14,7 @@ const PhoneCategories = () => {
     });
     return (
         <section className='my-6'>
-        <p className="text-4xl text-center text-sky-600 font-bold pb-8">Available Brands</p>
+        <p className="text-4xl text-center text-white font-bold pb-8">Available Brands</p>
         <hr className='text-sky-700 pb-10' />
         <div className='grid gap-6 grid-cols-1 lg:grid-cols-3 md:grid-cols-2'>
             {

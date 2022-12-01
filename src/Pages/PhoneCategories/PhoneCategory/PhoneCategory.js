@@ -1,18 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 
 const PhoneCategory = ({category}) => {
     const {  img, brand, name, location, resale_price, original_price, used_time, posted_date, seller_name } = category;
     return (
-        <div className="card w-96 bg-base-100 shadow-xl rounded-md">
-            <figure><img src={img} alt="Shoes" /></figure>
+        <div className="card w-96 bg-blue-400 shadow-xl rounded-md">
+            <figure><img src={img} alt="" /></figure>
             <div className="card-body">
                 <h2 className="card-title">
                     Brand: {brand}
-                    <div className="badge badge-warning rounded-md">status: used</div>
+                    <div className="badge badge-warning rounded-md">Condition: Used</div>
                 </h2>
-                <div className='text-2xl font-semibold'>
+                <div style={{whiteSpace: 'nowrap'}} className='text-2xl font-semibold'>
                     <p>{name}</p>
                 </div>
                 <div>
@@ -22,16 +21,13 @@ const PhoneCategory = ({category}) => {
                 </div>
                 <div>
                     <h1 className="font-thin">Used time: {used_time}</h1>
-                    <h2>Post: {posted_date}</h2>
+                    <h2>Posted On: {posted_date}</h2>
                 </div>
                 <div>
-                    <p className='text-green-600 inline-flex gap-2'> 
-                    {/* <HiLocationMarker></HiLocationMarker>  */}
-                    {location} </p>
+                    <p className='text-white inline-flex gap-2'>Location: {location} </p>
                 </div>
-                <div className="card-actions justify-end">
-                    <Link><button className="btn btn-outline btn-primary rounded-xl">Book Now</button></Link>
-                    <label htmlFor="booking-modal" className="btn">open modal</label>
+                <div className="card-actions justify-center">
+                    <label htmlFor="booking-modal" className="btn btn-outline btn-active rounded-xl">Book Now</label>
                 </div>
             </div>
             <div className='hidden'>

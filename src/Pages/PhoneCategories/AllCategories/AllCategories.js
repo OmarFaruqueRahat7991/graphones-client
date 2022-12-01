@@ -11,7 +11,6 @@ const AllCategories = ({category}) => {
                     Brand: {brand}
                     <div className="badge badge-warning rounded-md">status: used</div>
                 </h2>
-                <p>Hey! Here available your brands {brand} used phones in a minimum price.So Let's explore...</p>
                 <div className="card-actions justify-end">
                     <Link to={`/allPhones/${_id}`}><button className="btn btn-outline btn-primary rounded-xl">See All</button></Link>
                 </div>
