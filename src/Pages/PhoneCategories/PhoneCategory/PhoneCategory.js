@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const PhoneCategory = ({category}) => {
+const PhoneCategory = ({category , setMobileName }) => {
     const {  img, brand, name, location, resale_price, original_price, used_time, posted_date, seller_name } = category;
     return (
         <div className="card w-96 bg-blue-400 shadow-xl rounded-md">
@@ -27,7 +27,11 @@ const PhoneCategory = ({category}) => {
                     <p className='text-white inline-flex gap-2'>Location: {location} </p>
                 </div>
                 <div className="card-actions justify-center">
-                    <label htmlFor="booking-modal" className="btn btn-outline btn-active rounded-xl">Book Now</label>
+                    <label 
+                    htmlFor="booking-modal" 
+                    className="btn btn-outline btn-active rounded-xl"
+                    onClick={() => setMobileName(category)}
+                    >Book Now</label>
                 </div>
             </div>
             <div className='hidden'>
