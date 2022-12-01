@@ -6,7 +6,7 @@ const PhoneCategories = () => {
     const { data: categories = [] } = useQuery({
         queryKey: ['allPhones'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/allPhones')
+            const res = await fetch('https://my-twelfth-assignment-server.vercel.app/allPhones')
             const data = await res.json();
             console.log(data);
             return data;

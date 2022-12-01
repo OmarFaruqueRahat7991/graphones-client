@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import { HiLocationMarker } from 'react-icons/fa';
+
 
 const PhoneCategory = ({category}) => {
     const {  img, brand, name, location, resale_price, original_price, used_time, posted_date, seller_name } = category;

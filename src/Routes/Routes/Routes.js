@@ -6,6 +6,7 @@ import Login from "../../Pages/Login/Login";
 import AllPhones from "../../Pages/PhoneCategories/AllPhones/AllPhones";
 import Register from "../../Pages/Register/Register";
 import ErrorPage from "../../Pages/Shared/ErrorPage/ErrorPage";
+import PrivateRoute from "../../Router/PrivateRoute/PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/allPhones/:id',
-                element: <AllPhones></AllPhones>
+                element: <PrivateRoute><AllPhones></AllPhones></PrivateRoute>
             },
             {
                 path: '/login',
