@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AuthContext } from "../../../AuthProvider/AuthProvider";
 
 const BookingModal = ({ mobileName }) => {
+    
+    const { user } = useContext(AuthContext);
+
+
   const { name } = mobileName;
   return (
     <>
@@ -17,27 +22,26 @@ const BookingModal = ({ mobileName }) => {
           <form className='grid grid-cols-1 gap-3 mt-10'>
             <input
               type="text"
-              placeholder="Type here"
+              placeholder="Your Name"
+              defaultValue={user?.displayName}
+              disabled
               className="input input-bordered w-full"
             />
             <input
               type="text"
-              placeholder="Type here"
+              placeholder="Your Email"
+              defaultValue={user?.email} 
+              disabled
               className="input input-bordered w-full"
             />
             <input
               type="text"
-              placeholder="Type here"
+              placeholder="Your Number"
               className="input input-bordered w-full"
             />
             <input
               type="text"
-              placeholder="Type here"
-              className="input input-bordered w-full"
-            />
-            <input
-              type="text"
-              placeholder="Type here"
+              placeholder="Your Address"
               className="input input-bordered w-full"
             />
             <input
