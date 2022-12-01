@@ -1,7 +1,7 @@
 import React from "react";
 
-const BookingModal = ({mobileName}) => {
-    const {name} = mobileName;
+const BookingModal = ({ mobileName }) => {
+  const { name } = mobileName;
   return (
     <>
       <input type="checkbox" id="booking-modal" className="modal-toggle" />
@@ -13,13 +13,39 @@ const BookingModal = ({mobileName}) => {
           >
             ✕
           </label>
-          <h3 className="text-lg font-bold text-center text-white">
-            {name}
-          </h3>
-          <p className="py-4">
-            You've been selected for a chance to get one year of subscription to
-            use Wikipedia for free!
-          </p>
+          <h3 className="text-lg font-bold text-center text-white">{name}</h3>
+          <form className='grid grid-cols-1 gap-3 mt-10'>
+            <input
+              type="text"
+              placeholder="Type here"
+              className="input input-bordered w-full"
+            />
+            <input
+              type="text"
+              placeholder="Type here"
+              className="input input-bordered w-full"
+            />
+            <input
+              type="text"
+              placeholder="Type here"
+              className="input input-bordered w-full"
+            />
+            <input
+              type="text"
+              placeholder="Type here"
+              className="input input-bordered w-full"
+            />
+            <input
+              type="text"
+              placeholder="Type here"
+              className="input input-bordered w-full"
+            />
+            <input
+              type="submit"
+              className="btn btn-outline w-full"
+              value="Submit"
+            />
+          </form>
         </div>
       </div>
     </>

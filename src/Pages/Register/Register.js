@@ -5,7 +5,7 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Register = () => {
-  const { createUser , updateUser } = useContext(AuthContext);
+  const { createUser, updateUser } = useContext(AuthContext);
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -21,15 +21,13 @@ const Register = () => {
     createUser(email, password)
       .then((result) => {
         const user = result.user;
-        toast('User Created Successfully.')
+        toast("User Created Successfully.");
         const userInfo = {
-          displayName: name
-      }
-      updateUser(userInfo)
-          .then(() => { 
-
-          })
-          .catch(err => console.log(err));
+          displayName: name,
+        };
+        updateUser(userInfo)
+          .then(() => {})
+          .catch((err) => console.log(err));
         console.log(user);
         navigate(from, { replace: true });
       })
@@ -69,6 +67,13 @@ const Register = () => {
                   Register
                 </h3>
                 <form onSubmit={handleRegister}>
+                  <select className="select select-bordered bg-slate-200 w-full">
+                    <option disabled selected>
+                    What Sort Of Account You Want To Open?
+                    </option>
+                    <option>Buyer Account</option>
+                    <option>Seller Account</option>
+                  </select>
                   <div className="mb-1 sm:mb-2">
                     <label
                       htmlFor="name"
