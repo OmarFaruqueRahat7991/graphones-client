@@ -12,7 +12,7 @@ This project is the client side of my-twelfth-assignment of my web development c
 5. React
 6. React Router Dom
 7. React Icons
-8. Firebase
+8. Firebase etc
 
 ## Live Website Link: https://my-twelfth-assignment-client.web.app/
 ## Server Site Link: https://my-twelfth-assignment-server.vercel.app/
