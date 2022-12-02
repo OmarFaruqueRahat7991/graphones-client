@@ -13,64 +13,70 @@ const Blogs = () => {
         <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-              What's The Difference between SQL and NoSQL?
+              What are the different ways to manage a state in a React
+              application?
             </summary>
             <div className="px-4 pb-4">
               <p>
-               1.SQL databases are relational, NoSQL databases are non-relational.
-			   2.SQL databases use structured query language and have a predefined schema. NoSQL databases have dynamic schemas for unstructured data.
-			   3.SQL databases are vertically scalable, while NoSQL databases are horizontally scalable.
-			   4.SQL databases are table-based, while NoSQL databases are document, key-value, graph, or wide-column stores.
-			   5.SQL databases are better for multi-row transactions, while NoSQL is better for unstructured data like documents or JSON.
+                In React apps, there are at least seven ways to handle the
+                state. Let us briefly explore a few of them in this part.
+                1.useRefs 2.Context API 3.URL 4.Web Storage 5.Local State
+                6.Lifted State 7.Derived State
               </p>
             </div>
           </details>
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-			What is JWT, and how does it work?
+              How does prototypical inheritance work?
             </summary>
             <div className="px-4 pb-4">
               <p>
-			  JSON Web Token (JWT) is an open standard (RFC 7519) for securely transmitting information between parties as JSON object.
-
-			  Basically the identity provider(IdP) generates a JWT certifying user identity and Resource server decodes and verifies the authenticity of the token using secret salt / public key.
-
-			  1.User sign-in using username and password or google/facebook.
-			  2.Authentication server verifies the credentials and issues a jwt signed using either a secret salt or a private key.
-			  3.User's Client uses the JWT to access protected resources by passing the JWT in HTTP Authorization header.
-			  4.Resource server then verifies the authenticity of the token using the secret salt/ public key.
+                The Prototypal Inheritance is a feature in javascript used to
+                add methods and properties in objects. It is a method by which
+                an object can inherit the properties and methods of another
+                object. Traditionally, in order to get and set the [[Prototype]]
+                of an object, we use Object.getPrototypeOf and
+                Object.setPrototypeOf. In programming, we often want to take
+                something and extend it. For instance, we have a user object
+                with its properties and methods, and want to make admin and
+                guest as slightly modified variants of it. We’d like to reuse
+                what we have in user, not copy/reimplement its methods, just
+                build a new object on top of it. Prototypal inheritance is a
+                language feature that helps in that.
               </p>
             </div>
           </details>
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-			What is the difference between Javascript and NodeJS?
+              What is a unit test? Why should we write unit tests?
             </summary>
             <div className="px-4 pb-4 space-y-2">
               <p>
-			  1.JavaScript is a client-side scripting language that is lightweight, cross-platform, and interpreted. Both Java and HTML include it. Node.js, on the other hand, is a V8-based server-side programming language.
+                Unit testing By TechTarget Contributor Unit testing is a
+                software development process in which the smallest testable
+                parts of an application, called units, are individually and
+                independently scrutinized for proper operation. This testing
+                methodology is done during the development process by the
+                software developers and sometimes QA staff. The main objective
+                of unit testing is to isolate written code to test and determine
+                if it works as intended.
 
-			  As a result, it is used to create network-centric applications. It's a networked system made for data-intensive real-time applications. If we compare node js vs. python, it is clear that node js will always be the preferred option.
-
-			  2. JavaScript is a simple programming language that can be used with any browser that has the JavaScript Engine installed. Node.js, on the other hand, is an interpreter or execution environment for the JavaScript programming language. It requires libraries that can be conveniently accessed from JavaScript programming to be more helpful.
-
-			  3. Any engine may run JavaScript. As a result, writing JavaScript is incredibly easy, and any working environment is similar to a complete browser. Node.js, on the other hand, only enables the V8 engine. Written JavaScript code, on the other hand, can run in any context, regardless of whether the V8 engine is supported.
-
-			  4. A specific non-blocking operation is required to access any operating system. There are a few essential objects in JavaScript, but they are entirely OS-specific.
-
-			  Node.js, on the other hand, can now operate non-blocking software tasks out of any JavaScript programming. It contains no OS-specific constants. Node.js establishes a strong relationship with the system files, allowing companies to read and write to the hard drive.
+                Unit testing is an important step in the development process, because if done correctly, it can help detect early flaws in code which may be more difficult to find in later testing stages.
               </p>
             </div>
           </details>
           <details>
             <summary className="py-2 outline-none cursor-pointer focus:underline">
-			How does NodeJS handle multiple requests at the same time?
+            React vs. Angular vs. Vue?
             </summary>
             <div className="px-4 pb-4 space-y-2">
               <p>
-			  NodeJS receives multiple client requests and places them into EventQueue. NodeJS is built with the concept of event-driven architecture. NodeJS has its own EventLoop which is an infinite loop that receives requests and processes them. EventLoop is the listener for the EventQueue. 
-
-			  If NodeJS can process the request without I/O blocking then the event loop would itself process the request and sends the response back to the client by itself. But, it is possible to process multiple requests parallelly using the NodeJS cluster module or worker_threads module.
+              Angular:
+              Angular has a steep learning curve, considering it is a complete solution, and mastering Angular requires you to learn associated concepts like TypeScript and MVC. Even though it takes time to learn Angular, the investment pays dividends in terms of understanding how the front end works.
+              React:
+              React offers a Getting Started guide that should help one set up React in about an hour. The documentation is thorough and complete, with solutions to common issues already present on Stack Overflow. React is not a complete framework and advanced features require the use of third-party libraries. This makes the learning curve of the core framework not so steep but depends on the path you take with additional functionality. However, learning to use React does not necessarily mean that you are using the best practices.
+              Vue:
+              Vue provides higher customizability and hence is easier to learn than Angular or React. Further, Vue has an overlap with Angular and React with respect to their functionality like the use of components. Hence, the transition to Vue from either of the two is an easy option. However, simplicity and flexibility of Vue is a double-edged sword — it allows poor code, making it difficult to debug and test.
               </p>
             </div>
           </details>

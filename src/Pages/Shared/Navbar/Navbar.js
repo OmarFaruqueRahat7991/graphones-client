@@ -23,8 +23,8 @@ const Navbar = () => {
             {user?.email ? (
                 <>
                   
-                    <Link to='/services'>Services</Link>
-                    <Link to='/add'>Add A Service</Link>
+                    {/* <Link to='/services'>Services</Link>
+                    <Link to='/add'>Add A Service</Link> */}
                     <button onClick={handleLogOut} className="btn-ghost">Log Out</button>
                   
                 </>

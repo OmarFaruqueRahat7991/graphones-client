@@ -52,17 +52,12 @@ const About = () => {
             </div>
             <div className="max-w-xl mb-6">
               <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none ml-6">
-                Let Me Handle
+                About
                 <br className="hidden md:block" />
-                Your Business{' '}
-                <span className="inline-block text-deep-purple-accent-400">
-                  Growth
-                </span>
+                GrabPhones{' '}
               </h2>
               <p className="text-base text-gray-700 md:text-lg ml-6">
-              Bloom Internet Marketing Agency is a dynamic, versatile and full-service digital marketing agency that doesn’t rely on smoke and mirrors to attract new clients. Instead, Bloom trusts its own search engine optimization (SEO) and marketing skills to drive new customers to our website.
-
-              This is not a static company. I don’t limit myself to specific industries. Bloom has the experience and professional to build a custom website and use multiple digital marketing services to assist any size company in any industry.
+              GrabPhones is a platform on which you can buy and sell almost everything! Use the location selector to find deals close to you or check out ads to have items delivered directly to you with 100% buyer protection.
               </p>
             </div>
             <div>
@@ -86,19 +81,19 @@ const About = () => {
             <div className="flex flex-col items-end px-3">
               <img
                 className="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
-                src="https://img.freepik.com/free-photo/digital-marketing-with-icons-business-people_53876-94833.jpg?auto=format&h=200"
+                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1632992436.181757.jpg"
                 alt=""
               />
               <img
                 className="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
-                src="https://clearwateragency.com.au/wp-content/uploads/2022/04/digital-marketing-strategy.jpeg"
+                src="https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone_11-rosette-family-lineup-091019_big.jpg.large.jpg"
                 alt=""
               />
             </div>
             <div className="px-3">
               <img
                 className="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
-                src="https://cdn.searchenginejournal.com/wp-content/uploads/2021/08/the-ultimate-guide-to-digital-marketing-61726311bf393-sej-760x400.png"
+                src="https://static.toiimg.com/thumb/msid-90049209,width-400,resizemode-4/90049209.jpg"
                 alt=""
               />
             </div>

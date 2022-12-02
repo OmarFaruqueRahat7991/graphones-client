@@ -4,15 +4,14 @@ import { Link } from 'react-router-dom';
 const AllCategories = ({category}) => {
     const { brand, img, _id } = category;
     return (
-        <div className="card w-96 bg-base-100 shadow-xl rounded-md">
+        <div className="card w-96 bg-blue-400 shadow-xl rounded-md text-white">
             <figure><img src={img} alt="Shoes" /></figure>
             <div className="card-body">
-                <h2 className="card-title">
+                <h2 className="card-title justify-center">
                     Brand: {brand}
-                    <div className="badge badge-warning rounded-md">status: used</div>
                 </h2>
-                <div className="card-actions justify-end">
-                    <Link to={`/allPhones/${_id}`}><button className="btn btn-outline btn-primary rounded-xl">See All</button></Link>
+                <div className="card-actions justify-center">
+                    <Link to={`/allPhones/${_id}`}><button className="btn btn-outline btn-active rounded-xl">See All</button></Link>
                 </div>
             </div>
             </div>
