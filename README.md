@@ -4,7 +4,7 @@ This project is the client side of my-twelfth-assignment of my web development c
 
 
 
-## Technologies i Used In This Project:
+## Technologies I Used In This Project:
 1. HTML
 2. CSS
 3. Tailwind
